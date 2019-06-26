@@ -31,7 +31,6 @@ int main()
     void* hModule = 0;
     void* pointer = 0;
     const char *cFunctionName="Initialize";
-    const char *createInstace="CreateInstace";
     const char *cLibName="HNBridge.dll";
     //加载library并寻找过程function
     HINSTANCE hInstance = NULL;
@@ -41,7 +40,6 @@ int main()
     if(hInstance){
         printf("<<<<<<<<<<<<<<<<<   %s  >>>>>>>>>>>>>>>>>\n","load success" );
     }
-    //拿函数指针
 
     int argCount = 4;
     void *values[1];
@@ -50,7 +48,6 @@ int main()
     int buf =1024;
     void *ffiArgs[4]={&str,&port,&buf,&buf} ;
 
-//这里是依照jna源码callback.c写的
 
 
 
