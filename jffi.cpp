@@ -86,7 +86,7 @@ int main()
     if(create_ffiPrepStatus == FFI_OK){
         void *create_returnPtr = NULL;
         if (create_returnFfiType->size) {
-            create_returnPtr = alloca(create_returnFfiType->size);
+            create_returnPtr = alloca(create_returnFfiType->size);//alloca函数由编译器提供
         }
         ffi_call(&create_cif,FFI_FN(GetProcAddress(hInstance,"CreateInstace")), create_returnPtr, NULL);
         long create_returnValue = *(long *) create_returnPtr;
