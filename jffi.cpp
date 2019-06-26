@@ -32,7 +32,6 @@ int main()
     void* pointer = 0;
     const char *cFunctionName="Initialize";
     const char *cLibName="HNBridge.dll";
-    //加载library并寻找过程function
     HINSTANCE hInstance = NULL;
     hInstance=LoadLibrary(cLibName);
 
@@ -52,6 +51,7 @@ int main()
 
 
     //生成函数原型 ffi_cfi 对象
+    //Initialize的参数为依次为string ,int ,int,int
     ffi_cif cif;
     ffi_type *args[4];
     args[0] = &ffi_type_pointer;
