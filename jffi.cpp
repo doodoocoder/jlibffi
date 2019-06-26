@@ -28,9 +28,7 @@ __int64 _atoi64(const char* val) {
 int main()
 {
 
-    void* hModule = 0;
-    void* pointer = 0;
-    const char *cFunctionName="Initialize";
+
     const char *cLibName="HNBridge.dll";
     HINSTANCE hInstance = NULL;
     hInstance=LoadLibrary(cLibName);
