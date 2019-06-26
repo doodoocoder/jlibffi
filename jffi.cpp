@@ -66,7 +66,7 @@ int main()
         //生成用于保存返回值的内存
         void *returnPtr = NULL;
         if (returnFfiType->size) {
-            returnPtr = alloca(returnFfiType->size);
+            returnPtr = alloca(returnFfiType->size);//alloca函数由编译器malloc.h提供
         }
         //根据cif函数原型，函数指针，返回值内存指针，函数参数数据调用这个函数
         ffi_call(&cif,FFI_FN(GetProcAddress(hInstance,"Initialize")), returnPtr, ffiArgs);
@@ -86,7 +86,7 @@ int main()
     if(create_ffiPrepStatus == FFI_OK){
         void *create_returnPtr = NULL;
         if (create_returnFfiType->size) {
-            create_returnPtr = alloca(create_returnFfiType->size);//alloca函数由编译器提供
+            create_returnPtr = alloca(create_returnFfiType->size);//alloca函数由编译器malloc.h提供
         }
         ffi_call(&create_cif,FFI_FN(GetProcAddress(hInstance,"CreateInstace")), create_returnPtr, NULL);
         long create_returnValue = *(long *) create_returnPtr;
