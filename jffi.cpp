@@ -79,7 +79,7 @@ int main()
         printf("ret: %d \n", returnValue);
 
     }
-
+//CreateInstace无参数，返回值为long
     ffi_cif create_cif;
     ffi_type *create_args[0];
     ffi_type *create_returnFfiType = &ffi_type_slong;
