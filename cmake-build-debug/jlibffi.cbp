@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="jlibffi"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="G:/jlibffi/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/mingw32/bin/mingw32-make.exe -f &quot;G:/jlibffi/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/mingw32/bin/mingw32-make.exe -f &quot;G:/jlibffi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw32/bin/mingw32-make.exe -f &quot;G:/jlibffi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw32/bin/mingw32-make.exe -f &quot;G:/jlibffi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="jffi">
+				<Option output="G:/jlibffi/cmake-build-debug/jffi.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="G:/jlibffi/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/libffi-3.2.1/i686-pc-mingw32/include"/>
+					<Add directory="C:/Program Files (x86)/Java/jdk1.8.0_111/include"/>
+					<Add directory="C:/Program Files (x86)/Java/jdk1.8.0_111/include/win32"/>
+					<Add directory="C:\mingw32\include"/>
+					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw32/bin/mingw32-make.exe -f &quot;G:/jlibffi/cmake-build-debug/Makefile&quot;  VERBOSE=1 jffi"/>
+					<CompileFile command="C:/mingw32/bin/mingw32-make.exe -f &quot;G:/jlibffi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw32/bin/mingw32-make.exe -f &quot;G:/jlibffi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw32/bin/mingw32-make.exe -f &quot;G:/jlibffi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="jffi/fast">
+				<Option output="G:/jlibffi/cmake-build-debug/jffi.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="G:/jlibffi/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/libffi-3.2.1/i686-pc-mingw32/include"/>
+					<Add directory="C:/Program Files (x86)/Java/jdk1.8.0_111/include"/>
+					<Add directory="C:/Program Files (x86)/Java/jdk1.8.0_111/include/win32"/>
+					<Add directory="C:\mingw32\include"/>
+					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/mingw32/bin/mingw32-make.exe -f &quot;G:/jlibffi/cmake-build-debug/Makefile&quot;  VERBOSE=1 jffi/fast"/>
+					<CompileFile command="C:/mingw32/bin/mingw32-make.exe -f &quot;G:/jlibffi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw32/bin/mingw32-make.exe -f &quot;G:/jlibffi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw32/bin/mingw32-make.exe -f &quot;G:/jlibffi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="G:/jlibffi/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/mingw32/bin/mingw32-make.exe -f &quot;G:/jlibffi/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/mingw32/bin/mingw32-make.exe -f &quot;G:/jlibffi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw32/bin/mingw32-make.exe -f &quot;G:/jlibffi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw32/bin/mingw32-make.exe -f &quot;G:/jlibffi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="G:/jlibffi/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/mingw32/bin/mingw32-make.exe -f &quot;G:/jlibffi/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/mingw32/bin/mingw32-make.exe -f &quot;G:/jlibffi/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw32/bin/mingw32-make.exe -f &quot;G:/jlibffi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw32/bin/mingw32-make.exe -f &quot;G:/jlibffi/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="G:/jlibffi/jffi.cpp">
+			<Option target="jffi"/>
+		</Unit>
+		<Unit filename="G:/jlibffi/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,3 @@
+G:/jlibffi/cmake-build-debug/CMakeFiles/jffi.dir
+G:/jlibffi/cmake-build-debug/CMakeFiles/edit_cache.dir
+G:/jlibffi/cmake-build-debug/CMakeFiles/rebuild_cache.dir
