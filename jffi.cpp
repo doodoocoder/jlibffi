@@ -31,6 +31,7 @@ int main()
     void* hModule = 0;
     void* pointer = 0;
     const char *cFunctionName="Initialize";
+    const char *createInstace="CreateInstace";
     const char *cLibName="HNBridge.dll";
     //加载library并寻找过程function
     HINSTANCE hInstance = NULL;
@@ -76,6 +77,23 @@ int main()
         //拿到返回值
         int returnValue = *(int *) returnPtr;
         printf("ret: %d \n", returnValue);
+
+    }
+
+    ffi_cif create_cif;
+    ffi_type *create_args[0];
+    ffi_type *create_returnFfiType = &ffi_type_slong;
+    int create_argcount =0;
+    ffi_status create_ffiPrepStatus = ffi_prep_cif(&create_cif, FFI_DEFAULT_ABI, (unsigned int)create_argcount, create_returnFfiType, create_args);
+
+    if(create_ffiPrepStatus == FFI_OK){
+        void *create_returnPtr = NULL;
+        if (create_returnFfiType->size) {
+            create_returnPtr = alloca(create_returnFfiType->size);
+        }
+        ffi_call(&create_cif,FFI_FN(GetProcAddress(hInstance,"CreateInstace")), create_returnPtr, NULL);
+        long create_returnValue = *(long *) create_returnPtr;
+        printf("ret: %d \n", create_returnValue);
     }
 }
 
