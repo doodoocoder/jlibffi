@@ -3,7 +3,7 @@
 //
 //#include "jni.h" HelloWorld.h引用过jni.h，可以不再引用，header引用也有传递性
 
-#include "HelloWorld.h"
+#include "jlibffi.h"
 #ifdef _WIN32
 
 #include <windows.h>
