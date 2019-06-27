@@ -2,7 +2,7 @@
 // Created by Administrator on 2019/6/26.
 //利用libffi调用32位的dll库中的函数，java native调用的另一种实现方式，libffi-6.dll已经放在c:\windows下了
 //
-#include "jni.h"
+/// //#include "jni.h"  jlibffi.h引用过jni.h，可以不再引用,header引用也有传递性
 
 
 #include "jlibffi.h"
