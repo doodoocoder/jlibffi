@@ -1,7 +1,7 @@
 //
 // Created by Administrator on 2019/6/6.
 //
-#include "jni.h"
+//#include "jni.h" HelloWorld.h引用过jni.h，可以不再引用，header引用也有传递性
 
 #include "HelloWorld.h"
 #ifdef _WIN32
